@@ -1,1 +1,0 @@
-console.log('Sayfa yüklendi - Talep Karşılaştırma Sistemi');
