@@ -1,0 +1,1 @@
+Bu klasör Avesoro Teklif Karşılaştırma Analiz Sistemi dosyalarını içerir.
