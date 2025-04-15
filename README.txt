@@ -1,1 +1,0 @@
-Bu sistem Avesoro için çoklu sayfa teklif karşılaştırma uygulamasıdır.
