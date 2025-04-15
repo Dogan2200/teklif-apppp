@@ -1,0 +1,1 @@
+console.log('Talep Karşılaştırma Yüklendi');
