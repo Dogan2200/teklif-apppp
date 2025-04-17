@@ -1,26 +1,91 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  padding: 20px;
-  margin: 0;
+    background-color: #fef9f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
 h1 {
-  color: #C89F0B;
-  font-size: 32px;
+    color: #c59e00;
+    margin-top: 20px;
+    font-size: 32px;
 }
-ul {
-  list-style: none;
-  padding: 0;
+
+h2 {
+    color: #a48200;
+    font-size: 26px;
 }
-ul li {
-  margin: 10px 0;
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
 }
-a {
-  color: #0056b3;
-  text-decoration: none;
-  font-weight: bold;
+
+table, th, td {
+    border: 1px solid #ddd;
 }
-a:hover {
-  text-decoration: underline;
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #c59e00;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #c59e00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a48200;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form {
+    margin: 20px;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    background-color: #c59e00;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #a48200;
 }
