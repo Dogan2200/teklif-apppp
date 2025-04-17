@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Yeni Teklif Girişi</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Teklif Girişi | AVESORO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Yeni Teklif Girişi</h1>
-  <p>Firma, stok, ürün grubu, birim fiyat gibi bilgileri buradan girebilirsiniz.</p>
-  <a href="index.html">Ana Sayfaya Dön</a>
+
+    <h1>Yeni Teklif Girişi</h1>
+
+    <form id="teklifForm">
+        <table id="teklifTable">
+            <thead>
+                <tr>
+                    <th>Firma Adı</th>
+                    <th>Stok Adı</th>
+                    <th>Ürün Grubu</th>
+                    <th>Departman</th>
+                    <th>Satın Alan Şirket</th>
+                    <th>Birim</th>
+                    <th>Birim Fiyatı</th>
+                    <th>Para Birimi</th>
+                    <th>İskonto (%)</th>
+                    <th>KDV (%)</th>
+                    <th>Temin Süresi (Gün)</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            <tbody id="teklifBody">
+                <tr>
+                    <td><input type="text" name="firmaAdi"></td>
+                    <td><input type="text" name="stokAdi"></td>
+                    <td><input type="text" name="urunGrubu"></td>
+                    <td><input type="text" name="departman"></td>
+                    <td><input type="text" name="satinAlanSirket"></td>
+                    <td><input type="text" name="birim"></td>
+                    <td><input type="number" name="birimFiyat"></td>
+                    <td>
+                        <select name="paraBirimi">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="TRY">TRY</option>
+                        </select>
+                    </td>
+                    <td><input type="number" name="iskonto"></td>
+                    <td><input type="number" name="kdv"></td>
+                    <td><input type="number" name="teminSuresi"></td>
+                    <td><button type="button" onclick="satirSil(this)">Sil</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" onclick="satirEkle()">Satır Ekle</button>
+        <button type="submit">Kaydet</button>
+    </form>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
