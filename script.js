@@ -1,31 +1,30 @@
 function satirEkle() {
-    const tablo = document.getElementById("teklifTable").getElementsByTagName('tbody')[0];
-    const yeniSatir = tablo.insertRow();
+  var table = document.getElementById("teklifTablosu").getElementsByTagName('tbody')[0];
+  var newRow = table.insertRow();
 
-    yeniSatir.innerHTML = `
-        <td><input type="text" name="firmaAdi"></td>
-        <td><input type="text" name="stokAdi"></td>
-        <td><input type="text" name="urunGrubu"></td>
-        <td><input type="text" name="departman"></td>
-        <td><input type="text" name="satinAlanSirket"></td>
-        <td><input type="text" name="birim"></td>
-        <td><input type="number" name="birimFiyat"></td>
-        <td>
-            <select name="paraBirimi">
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="GBP">GBP</option>
-                <option value="TRY">TRY</option>
-            </select>
-        </td>
-        <td><input type="number" name="iskonto"></td>
-        <td><input type="number" name="kdv"></td>
-        <td><input type="number" name="teminSuresi"></td>
-        <td><button type="button" onclick="satirSil(this)">Sil</button></td>
-    `;
+  var cells = ['Stok Adı', 'Ürün Grubu', 'Departman', 'Firma Adı', 'Birim', 'Fiyat', 'KDV (%)', 'İskonto (%)', 'Temin Süresi', 'Dosya Yükle', 'Sil'];
+
+  for (var i = 0; i < cells.length; i++) {
+    var newCell = newRow.insertCell(i);
+    if (cells[i] === 'Sil') {
+      newCell.innerHTML = '<button onclick="satirSil(this)">❌</button>';
+    } else if (cells[i] === 'Dosya Yükle') {
+      newCell.innerHTML = '<input type="file">';
+    } else {
+      newCell.innerHTML = '<input type="text" placeholder="' + cells[i] + '">';
+    }
+  }
 }
 
 function satirSil(btn) {
-    const satir = btn.parentNode.parentNode;
-    satir.parentNode.removeChild(satir);
+  var row = btn.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
+
+function verileriKaydet() {
+  alert("Teklifler kaydedildi! (Demo versiyon)");
+}
+
+function enIyiTeklifiGoster() {
+  alert("En iyi teklif hesaplandı! (Demo versiyon)");
 }
