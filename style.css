@@ -1,91 +1,66 @@
 body {
-    background-color: #fef9f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  background-color: #fef9f0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
 }
 
 h1 {
-    color: #c59e00;
-    margin-top: 20px;
-    font-size: 32px;
+  color: #c59e00;
+  margin-top: 20px;
+  font-size: 32px;
 }
 
-h2 {
-    color: #a48200;
-    font-size: 26px;
+.menu, .admin-islemler {
+  margin-top: 30px;
+}
+
+.menu a, .admin-islemler button {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  background-color: #c59e00;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover, .admin-islemler button:hover {
+  background-color: #a48200;
 }
 
 table {
-    width: 90%;
-    margin: 30px auto;
-    border-collapse: collapse;
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+  border: 1px solid #ccc;
 }
 
 th, td {
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background-color: #c59e00;
-    color: white;
-}
-
-td {
-    background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
 
 button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #c59e00;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #a48200;
-}
-
-input[type="text"],
-input[type="number"],
-select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form {
-    margin: 20px;
-}
-
-.menu a {
-    display: inline-block;
-    margin: 15px;
-    padding: 15px 30px;
-    background-color: #c59e00;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: #a48200;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
