@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teklif Karşılaştırma | AVESORO</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teklif Karşılaştırma</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Teklif Karşılaştırma Ekranı</h1>
+  <div class="logo">
+    <img src="logo.png" alt="Avesoro Logo">
+  </div>
 
-    <table id="karsilastirmaTable">
-        <thead>
-            <tr>
-                <th>Stok Adı</th>
-                <th>Firma 1</th>
-                <th>Firma 2</th>
-                <th>Firma 3</th>
-                <th>En İyi Teklif</th>
-                <th>Fark (%)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Dinamik veriler buraya gelecek -->
-            <tr>
-                <td>Örnek Stok 1</td>
-                <td>100 USD</td>
-                <td>105 USD</td>
-                <td>98 USD</td>
-                <td>Firma 3 (98 USD)</td>
-                <td>+2%</td>
-            </tr>
-            <tr>
-                <td>Örnek Stok 2</td>
-                <td>200 USD</td>
-                <td>195 USD</td>
-                <td>210 USD</td>
-                <td>Firma 2 (195 USD)</td>
-                <td>-2.5%</td>
-            </tr>
-        </tbody>
-    </table>
+  <h1>Teklif Karşılaştırma Ekranı</h1>
+
+  <table id="karsilastirmaTablosu">
+    <thead>
+      <tr>
+        <th>Stok Adı</th>
+        <th>Ürün Grubu</th>
+        <th>Departman</th>
+        <th>Firma 1</th>
+        <th>Firma 2</th>
+        <th>Firma 3</th>
+        <th>Seçim</th>
+        <th>Notlar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Karşılaştırma verileri burada gösterilecek -->
+    </tbody>
+  </table>
+
+  <button onclick="enIyiTeklifiGoster()">🌟 En İyi Teklifi Göster</button>
 
 </body>
 </html>
