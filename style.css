@@ -1,66 +1,11 @@
 body {
-  background-color: #fef9f0;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.logo {
-  margin-top: 20px;
-}
-
-.logo img {
-  width: 250px;
-  height: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 40px;
 }
 
 h1 {
-  color: #c59e00;
-  margin-top: 20px;
-  font-size: 32px;
-}
-
-.menu, .admin-islemler {
-  margin-top: 30px;
-}
-
-.menu a, .admin-islemler button {
-  display: inline-block;
-  margin: 10px;
-  padding: 15px 30px;
-  background-color: #c59e00;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.menu a:hover, .admin-islemler button:hover {
-  background-color: #a48200;
-}
-
-table {
-  width: 90%;
-  margin: 30px auto;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  border: 1px solid #ccc;
-}
-
-th, td {
-  padding: 10px;
-  text-align: center;
-}
-
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+  color: #006400;
+  font-size: 24px;
 }
