@@ -1,12 +1,15 @@
 function openPopup() {
-  document.getElementById('popup').classList.remove('hidden');
+  document.getElementById('popup').style.display = 'block';
+  showTab('teklif');
 }
 
 function closePopup() {
-  document.getElementById('popup').classList.add('hidden');
+  document.getElementById('popup').style.display = 'none';
 }
 
-function showTab(id) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.add('hidden'));
-  document.getElementById(id).classList.remove('hidden');
+function showTab(tabId) {
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.style.display = 'none';
+  });
+  document.getElementById(tabId).style.display = 'block';
 }
