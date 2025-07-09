@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <title>Yeni Teklif Girişi</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<head><meta charset="UTF-8"><title>Teklif Girişi</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script></head>
 <body>
-  <h2>Yeni Teklif Girişi</h2>
-  <form>
-    <label>Kart Adı: <input type="text" value="Container Buy"></label><br>
-    <label>Miktar: <input type="number" value="5"></label><br>
-    <label>Açıklama: <input type="text" value="Konteyner Alımı // 30.06.2025 / 40’ HC"></label><br>
-    <table>
-      <tr><th>Firma</th><th>Birim Fiyat</th><th>İskonto</th><th>KDV</th><th>Net Tutar</th><th>Teslim Süresi</th></tr>
-      <tr><td>LOGICON</td><td>2000</td><td>0</td><td>0</td><td>10000</td><td>1 Gün</td></tr>
-      <tr><td>NMT</td><td>2000</td><td>0</td><td>0</td><td>10000</td><td>1 Gün</td></tr>
-    </table>
-  </form>
+<h2>Ürün ve Malzeme Bilgisi</h2>
+<form>
+<input type="text" placeholder="Kart Adı">
+<input type="number" placeholder="Miktar">
+<input type="text" placeholder="Açıklama">
+<button type="button" onclick="openPopup()">Tedarikçiler</button>
+</form>
+
+<div id="popup" class="popup hidden">
+  <div class="tabs">
+    <button onclick="showTab('teklif')">Teklif</button>
+    <button onclick="showTab('detay')">Tedarik Detay</button>
+    <button onclick="showTab('not')">Notlar</button>
+  </div>
+  <div id="teklif" class="tab">Firma adı, fiyat, KDV, iskonto...</div>
+  <div id="detay" class="tab hidden">Teslim süresi, teslim yeri, ödeme planı...</div>
+  <div id="not" class="tab hidden">
+    <textarea placeholder="Genel açıklama yazınız"></textarea>
+    <input type="file" multiple>
+  </div>
+  <button onclick="closePopup()">Kapat</button>
+</div>
 </body>
 </html>
