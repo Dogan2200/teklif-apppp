@@ -1,1 +1,35 @@
-console.log("Teklif karşılaştırma ekranı başlatıldı.");
+body {
+  font-family: Arial, sans-serif;
+  background: #fefefe;
+  padding: 20px;
+  color: #333;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #a27900;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.firma-kutusu {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+.onayli {
+  background: #d4fcd4;
+  border-color: #3c9c3c;
+}
