@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head><meta charset="UTF-8"><title>Teklif Girişi</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Yeni Teklif Girişi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
 <body>
-<h2>Ürün ve Malzeme Bilgisi</h2>
-<form>
-<input type="text" placeholder="Kart Adı">
-<input type="number" placeholder="Miktar">
-<input type="text" placeholder="Açıklama">
-<button type="button" onclick="openPopup()">Tedarikçiler</button>
-</form>
+  <h2>📦 Ürün / Malzeme Bilgisi</h2>
+  <form>
+    <input type="text" placeholder="Kart Adı">
+    <input type="number" placeholder="Miktar">
+    <input type="text" placeholder="Açıklama">
+    <button type="button" onclick="openPopup()">Tedarikçiler</button>
+  </form>
 
-<div id="popup" class="popup hidden">
-  <div class="tabs">
-    <button onclick="showTab('teklif')">Teklif</button>
-    <button onclick="showTab('detay')">Tedarik Detay</button>
-    <button onclick="showTab('not')">Notlar</button>
+  <div id="popup" class="popup hidden">
+    <div class="tabs">
+      <button onclick="showTab('teklif')">💰 Teklif</button>
+      <button onclick="showTab('detay')">🚚 Tedarik Detayı</button>
+      <button onclick="showTab('not')">🗒 Notlar</button>
+    </div>
+    <div id="teklif" class="tab">Firma, birim fiyat, iskonto, kdv...</div>
+    <div id="detay" class="tab hidden">Teslim yeri, ödeme planı, konteyner bilgisi...</div>
+    <div id="not" class="tab hidden">
+      <textarea placeholder="Açıklama giriniz..."></textarea>
+      <input type="file" multiple>
+    </div>
+    <button onclick="closePopup()">Kapat</button>
   </div>
-  <div id="teklif" class="tab">Firma adı, fiyat, KDV, iskonto...</div>
-  <div id="detay" class="tab hidden">Teslim süresi, teslim yeri, ödeme planı...</div>
-  <div id="not" class="tab hidden">
-    <textarea placeholder="Genel açıklama yazınız"></textarea>
-    <input type="file" multiple>
-  </div>
-  <button onclick="closePopup()">Kapat</button>
-</div>
 </body>
 </html>
