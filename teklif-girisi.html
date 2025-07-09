@@ -2,42 +2,20 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yeni Teklif Girişi</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <div class="logo">
-    <img src="logo.png" alt="Avesoro Logo">
-  </div>
-
-  <h1>Yeni Teklif Girişi</h1>
-
-  <table id="teklifTablosu">
-    <thead>
-      <tr>
-        <th>Stok Adı</th>
-        <th>Ürün Grubu</th>
-        <th>Departman</th>
-        <th>Firma Adı</th>
-        <th>Birim</th>
-        <th>Fiyat</th>
-        <th>KDV (%)</th>
-        <th>İskonto (%)</th>
-        <th>Temin Süresi</th>
-        <th>Dosya (PDF/Excel)</th>
-        <th>Sil</th>
-      </tr>
-    </thead>
-    <tbody id="teklifBody">
-      <!-- Dinamik satırlar buraya eklenecek -->
-    </tbody>
-  </table>
-
-  <button onclick="satirEkle()">➕ Satır Ekle</button>
-  <button onclick="verileriKaydet()">💾 Teklifleri Kaydet</button>
-
+  <h2>Yeni Teklif Girişi</h2>
+  <form>
+    <label>Kart Adı: <input type="text" value="Container Buy"></label><br>
+    <label>Miktar: <input type="number" value="5"></label><br>
+    <label>Açıklama: <input type="text" value="Konteyner Alımı // 30.06.2025 / 40’ HC"></label><br>
+    <table>
+      <tr><th>Firma</th><th>Birim Fiyat</th><th>İskonto</th><th>KDV</th><th>Net Tutar</th><th>Teslim Süresi</th></tr>
+      <tr><td>LOGICON</td><td>2000</td><td>0</td><td>0</td><td>10000</td><td>1 Gün</td></tr>
+      <tr><td>NMT</td><td>2000</td><td>0</td><td>0</td><td>10000</td><td>1 Gün</td></tr>
+    </table>
+  </form>
 </body>
 </html>
