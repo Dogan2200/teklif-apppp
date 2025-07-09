@@ -2,57 +2,11 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raporlama</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
-  <div class="logo">
-    <img src="logo.png" alt="Avesoro Logo">
-  </div>
-
-  <h1>Raporlama Ekranı</h1>
-
-  <canvas id="raporGrafik" width="400" height="200"></canvas>
-
-  <div class="menu">
-    <button onclick="grafikDegistir('bar')">Çubuk Grafik</button>
-    <button onclick="grafikDegistir('pie')">Pasta Grafik</button>
-    <button onclick="grafikDegistir('line')">Çizgi Grafik</button>
-  </div>
-
-  <script>
-    let ctx = document.getElementById('raporGrafik').getContext('2d');
-    let grafikTipi = 'bar';
-    let grafik = new Chart(ctx, {
-      type: grafikTipi,
-      data: {
-        labels: ['Firma 1', 'Firma 2', 'Firma 3'],
-        datasets: [{
-          label: 'Teklif Tutarları',
-          data: [3000, 2500, 2800],
-          backgroundColor: ['#ffcd56', '#4bc0c0', '#ff6384']
-        }]
-      }
-    });
-
-    function grafikDegistir(tip) {
-      grafik.destroy();
-      grafik = new Chart(ctx, {
-        type: tip,
-        data: {
-          labels: ['Firma 1', 'Firma 2', 'Firma 3'],
-          datasets: [{
-            label: 'Teklif Tutarları',
-            data: [3000, 2500, 2800],
-            backgroundColor: ['#ffcd56', '#4bc0c0', '#ff6384']
-          }]
-        }
-      });
-    }
-  </script>
-
+  <h2>📝 Rapor Sayfası</h2>
+  <p>Burada geçmiş teklifler ve analiz raporları listelenecek.</p>
 </body>
 </html>
