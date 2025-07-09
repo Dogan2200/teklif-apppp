@@ -2,9 +2,26 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Avesoro Teklif Karşılaştırma</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <title>Ürün / Malzeme Girişi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">
-    <img src="assets/logo.png" alt="Avesoro Logo" class="logo">
+  <h1>📦 Ürün / Malzeme Kartı</h1>
+  <input type="text" placeholder="Kart Adı">
+
+  <button onclick="openPopup()">💰 Teklif</button>
+  <div id="popup" class="popup">
+    <button onclick="showTab('teklif')">💰 Teklif</button>
+    <button onclick="showTab('tedarik')">🚛 Tedarik Detayı</button>
+    <button onclick="showTab('notlar')">🗓️ Notlar</button>
+
+    <div id="teklif" class="tab">Firma, birim fiyat, iskonto, kdv…</div>
+    <div id="tedarik" class="tab">Teslim yeri, ödeme planı, temin süresi, konteyner…</div>
+    <div id="notlar" class="tab">Açıklamalar, notlar, dosya yükleme alanı</div>
+
+    <button onclick="closePopup()">Kapat</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
